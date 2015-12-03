@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <!--I understand that <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> is showing as a validation error but my site works so I wish to ignore it-->
+        <title>RadicalPhoto Gallery</title>
+        <meta name="description" content="RadicalPhoto">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet' type='text/css'>
+        <link type="text/css" rel="stylesheet" href="css/main.css">
+        
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+<body>
+
+	   
+      	
+
+<div id="header">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a>
+	</ul>
+
+	<h1>RadicalPhoto</h1>
+
+</div>
+		
+
+    <div class="jumbotron" id="main_wrapper">
+
+		<h2>Gallery</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+		<div class="row">
+		<div class="col-sx-1 col-md-2">
+			<a href="images/blue_dress.jpg" class="thumbnail"><img src="images/blue_dress.jpg" width="800" height="530" alt="girl in blue dress " class="img-responsive" id="bluedress"></a>
+			</div>
+			<div class="col-sx-1 col-md-2">
+			<a href="images/boxer.jpg" class="thumbnail"><img src="images/boxer.jpg" width="800" height="530" alt="boxer face" class="img-responsive" id="boxer"></a>
+			</div>
+			<div class="col-sx-1 col-md-2">
+			<a href="images/country_boy_relaxing.jpg" class="thumbnail"><img src="images/country_boy_relaxing.jpg" width="801" height="530" alt="man with hat sitting" class="img-responsive" id="mansitting"></a>
+			</div>
+			<div class="col-sx-1 col-md-2">
+			<a href="images/eye.jpg" class="thumbnail"><img src="images/eye.jpg" width="800" height="530" alt="eye" class="img-responsive" id="eye"></a>
+			</div>
+			<div class="col-sx-1 col-md-2">
+			<a href="images/ice_swim.jpg" class="thumbnail"><img src="images/ice_swim.jpg" width="800" height="530" alt="man after swim in ice" class="img-responsive" id="swim"></a>
+			</div>
+			<div class="col-sx-1 col-md-2">
+			<a href="images/sitting.jpg" class="thumbnail"><img src="images/sitting.jpg" width="800" height="530" alt="young man sitting in nature" class="img-responsive" id="naturesit"></a>
+			</div>
+		</div>	
+		<div class="row">
+			<img src="images/blue_dress.jpg" width="800" height="533" alt="girl in blue dress" class="img-responsive center-block" id="bgForImg">
+
+		</div>
+
+	</div>
+
+
+
+	<div id="footer">
+	<p>All content &copy; Copyright</p>
+	</div>
+
+    
+    <script src="js/plugins.js"></script>
+        <script>
+			// variables
+			var bluedress = document.getElementById("bluedress");
+			var boxer = document.getElementById("boxer");
+			var mansitting = document.getElementById("mansitting");
+			var eyes = document.getElementById("eye");
+            var swim = document.getElementById("swim");
+			var naturesit = document.getElementById ("naturesit");
+			var bgForImg = document.getElementById("bgForImg");
+
+			//function
+			function tbBoxer(){
+				bgForImg.src = "images/boxer.jpg";
+			}
+			boxer.onmouseover=tbBoxer;
+
+			function tbMan(){
+				bgForImg.src = "images/country_boy_relaxing.jpg";
+			}
+			mansitting.onmouseover=tbMan;
+
+			function tbeye(){
+				bgForImg.src = "images/eye.jpg";
+			}
+			eye.onmouseover= tbeye;
+
+			function tbswim(){
+				bgForImg.src = "images/ice_swim.jpg";
+			}
+			swim.onmouseover= tbswim;
+
+			function tbnaturesit(){
+				bgForImg.src = "images/sitting.jpg";
+			}
+			naturesit.onmouseover= tbnaturesit;
+
+			function tbBluedress(){
+				bgForImg.src = "images/blue_dress.jpg";
+			}
+			bluedress.onmouseover = tbBluedress;
+
+		</script>
+
+
+</body>
+</html>
